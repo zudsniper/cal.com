@@ -93,6 +93,7 @@
         "PARSE_KEY",
         "NODE_ENV",
         "OPENAI_API_KEY",
+        "OPENAI_BASE_URL",
         "SENDGRID_API_KEY",
         "DATABASE_URL"
       ]
