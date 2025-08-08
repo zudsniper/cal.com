@@ -210,9 +210,11 @@ export const RECORDING_IN_PROGRESS_ICON = IS_PRODUCTION
 export const SCOPE_USERINFO_PROFILE = "https://www.googleapis.com/auth/userinfo.profile";
 export const SCOPE_USERINFO_EMAIL = "https://www.googleapis.com/auth/userinfo.email";
 export const GOOGLE_OAUTH_SCOPES = [SCOPE_USERINFO_PROFILE, SCOPE_USERINFO_EMAIL];
+export const GOOGLE_MEET_SCOPE = "https://www.googleapis.com/auth/meetings.space.created";
 export const GOOGLE_CALENDAR_SCOPES = [
   "https://www.googleapis.com/auth/calendar.events",
   "https://www.googleapis.com/auth/calendar.readonly",
+  GOOGLE_MEET_SCOPE,
 ];
 export const DIRECTORY_IDS_TO_LOG = process.env.DIRECTORY_IDS_TO_LOG?.split(",") || [];
 export const SCANNING_WORKFLOW_STEPS = !!(!IS_SELF_HOSTED && process.env.IFFY_API_KEY);
